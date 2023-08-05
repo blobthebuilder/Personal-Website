@@ -8,6 +8,7 @@ import Home from "./Components/Home Page/Home";
 import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Projects from "./Components/Projects/Project";
+import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
             path="resume"
             element={<Resume />}></Route>
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

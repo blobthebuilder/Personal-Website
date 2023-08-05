@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <Link
         class="navbar-brand"
         to="/">

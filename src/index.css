@@ -316,7 +316,7 @@ code {
 
 /*Resume*/
 .resume-container {
-  background-color: #eecbac;
+  background-color: #fbeec1;
   height: fit-content;
 }
 .resume {
@@ -405,3 +405,38 @@ code {
 }
 
 /*End Projects*/
+
+/* Footer */
+.footer {
+  background-color: #bc986a;
+  height: 5rem;
+}
+
+.footer h3 {
+  font-size: 1.4em;
+  color: white !important;
+}
+.footer-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.social-icons {
+  float: left;
+}
+
+.social-icons a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0 16px;
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    height: 8rem;
+  }
+}
+/* End Footer */

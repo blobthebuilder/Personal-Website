@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
-import pdf from "../hello.pdf";
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 
 function Resume(props) {
   const pdfUrl =
@@ -33,9 +31,7 @@ function Resume(props) {
         fluid
         className="resume-section">
         <Row className="resume">
-          <Document file={pdf}>
-            <Page />
-          </Document>
+          <embed src={pdfUrl} />
         </Row>
       </Container>
     </div>
