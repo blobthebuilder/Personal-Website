@@ -1,13 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Rubik:wght@500;800&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Effects */
+.project-card {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(100%);
+}
+
+.leftHidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0) !important;
+  transform: translateX(0) !important;
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+/* End effects */
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: beige;
+  background-image: url(./Assets/loader.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* End Preloader */
+
+/*Navbar */
+.navbar {
+  padding-top: 0.5rem !important;
+  padding-right: 10rem !important;
+  padding-left: 10rem !important;
+  background-color: #bc986a;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-size: 3rem !important;
+  font-weight: 700;
+  color: white !important;
+  font-family: "Rubik", sans-serif !important;
+}
+
+.nav-link {
+  font-size: 1.4rem !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.navbar-toggler {
+  position: relative !important;
+  border-color: transparent !important;
+}
+
+.navbar-toggler span {
+  display: block !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  left: 0 !important;
+  opacity: 1 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: 0 !important;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0.5rem 2rem !important;
+    font-size: 1.4rem !important;
+  }
+  .nav-item {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .nav-link {
+    padding: 0.7rem 1rem !important;
+  }
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-item a {
+  font-weight: 400;
+  transition: all 0.3s ease-out 0s;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-nav .nav-item a::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 0;
+  border-radius: 16px;
+  background: white;
+  bottom: 1px;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out 0s;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.navbar-nav .nav-item a:hover::after {
+  width: 100%;
+}
+
+/*End Navbar*/
+
+/*Home Page*/
+
+.home-section {
+  position: relative;
+  z-index: -1;
+  /*background-image: var(--image-gradient), url(./Assets/home-bg.jpg);*/
+  /*background-position: top center;
+  background-repeat: no-repeat;*/
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+  height: 90vh !important;
+  /* The image used */
+  background-image: url("./Assets/gym.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .home-section {
+    background-attachment: scroll;
+  }
+}
+
+.home-content {
+  padding: 13rem 0 2rem !important;
+  color: white;
+  text-align: center;
+}
+.home-header {
+  text-align: center;
+}
+.heading {
+  font-size: 1.8em !important;
+  font-style: italic;
+}
+
+.heading-name {
+  font-size: 2.5em !important;
+}
+
+.main-name {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 7rem;
+  font-weight: 800;
+}
+
+.Typewriter__wrapper {
+  font-size: 2.2em !important;
+  color: #daad86 !important;
+  font-weight: 600 !important;
+}
+.Typewriter__cursor {
+  font-size: 2.4em !important;
+  color: #daad86 !important;
+}
+
+@media (max-width: 992px) {
+  .Typewriter__wrapper {
+    font-size: 1.4em !important;
+    font-weight: 500 !important;
+  }
+  .Typewriter__cursor {
+    font-size: 1.4em !important;
+    color: #daad86 !important;
+  }
+}
+
+.intro-section {
+  text-align: center;
+  background-color: #fbeec1;
+  padding-bottom: 7rem !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.home-intro {
+  padding-top: 3rem;
+}
+
+.intro {
+  font-family: "Rubik", sans-serif;
+}
+
+.intro-subheader {
+  font-family: "Rubik", sans-serif;
+}
+.intro-body {
+  text-align: left;
+  padding-left: 5rem;
+  font-size: 1.7rem;
+}
+
+.intro-img {
+  animation: morph 8s ease-in-out infinite;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  height: 400px;
+  transition: all 1s ease-in-out;
+  width: 400px;
+  z-index: 5;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+@media (max-width: 992px) {
+}
+/*End Home Page*/
+
+/*About Page*/
+
+.about-section {
+  font-family: "Poppins", sans-serif;
+  background-color: #fbeec1;
+}
+.about-heading {
+  background-color: aquamarine;
+  text-align: center !important;
+  font-family: "Rubik", sans-serif;
+  font-weight: 800 !important;
+}
+
+.about-subheading {
+  font-family: "Rubik", sans-serif;
+  padding-bottom: 20px;
+  padding-top: 3rem;
+  font-size: 3rem;
+}
+
+.about-text {
+  text-align: left;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.about-content {
+  height: 90vh;
+}
+
+@media (max-width: 992px) {
+  .about-content {
+    height: fit-content !important;
+  }
+}
+
+/*End About Page*/
+
+/*Resume*/
+.resume-container {
+  background-color: #eecbac;
+  height: fit-content;
+}
+.resume {
+  height: 90vh;
+}
+
+/*End Resume*/
+
+/*Projects*/
+.project-section {
+  position: relative !important;
+  padding-top: 2rem !important;
+  padding-bottom: 30px !important;
+  text-align: center;
+  background-color: #fbeec1;
+}
+
+.project-heading {
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+
+.project-sub {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.project-row {
+  height: 100vh;
+}
+.project-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: fit-content;
+  text-align: left !important;
+}
+
+.project-card-view {
+  box-shadow: 0 4px 5px 3px rgba(218, 173, 134, 1) !important;
+  color: black !important;
+  background-color: white !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.project-card-view:hover {
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(218, 173, 134, 1) !important;
+}
+
+.card-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #daad86 !important;
+  border-color: #daad86 !important;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #eecbac !important;
+  border-color: #eecbac !important;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.project-img {
+  max-height: 40rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 992px) {
+  .project-row {
+    height: fit-content !important;
+  }
+}
+
+/*End Projects*/
