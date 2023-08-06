@@ -31,18 +31,23 @@ function Home() {
             style={{ paddingTop: "2rem" }}>
             <h1>A Quick Introduction</h1>
             <p className="intro-body">
-              I'm a student at the University of California, Santa Barbara,
+              I'm a student at the{" "}
+              <span className="brown">
+                University of California, Santa Barbara,
+              </span>{" "}
               majoring in computer science.
             </p>
             <p className="intro-body">
               I played with Scratch in middle school, but I really started
               coding in high school. Since then, I think I've learned a few
-              things here and there.
+              things, at least...
             </p>
             <p className="intro-body">
               I'm still exploring this exciting field, so I've worked on a
-              variety of projects, including Unity games, AI, ML, computer
-              vision, web, and app development.
+              variety of projects, including{" "}
+              <span className="brown">
+                Unity games, AI, ML, computer vision, web, and app development.
+              </span>
             </p>
             <p className="intro-body">
               Some of my proudest moments in computer science have been getting

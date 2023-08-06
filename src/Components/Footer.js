@@ -22,7 +22,7 @@ function Footer() {
                 href="https://github.com/blobthebuilder"
                 target="_blank"
                 rel="noopener noreferrer">
-                <AiFillGithub />
+                <AiFillGithub size={25} />
               </a>
             </li>
 
@@ -31,7 +31,7 @@ function Footer() {
                 href="https://www.linkedin.com/in/frank-wang-cs/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <FaLinkedinIn />
+                <FaLinkedinIn size={25} />
               </a>
             </li>
           </ul>

@@ -19,10 +19,14 @@ function About() {
             Currently a Computer Science major at UCSB.
           </p>
           <p className="about-text">
-            I've participated in several hackathons, and recently placed for the
-            first time! My other projects include classifying similar sound
-            files, game development, and a League of Legends champion
-            recommender.
+            I've participated in{" "}
+            <span className="brown">several hackathons, </span> and{" "}
+            <span className="brown">recently placed</span> for the first time!
+            My other projects include{" "}
+            <span className="brown">
+              classifying similar sound files, game development, and a League of
+              Legends champion recommender.
+            </span>
           </p>
           <p className="about-text">
             Through these various projects, I've mastered numerous skills, most
@@ -48,15 +52,19 @@ function About() {
             staying active and having fun.
           </p>
           <p className="about-text">
-            My proudest personal achievements are a 4:54 mile time, benching 155
-            pounds, and (don't laugh) reaching Diamond rank in Valorant (I know
-            you're laughing).
+            My proudest personal achievements are a{" "}
+            <span className="brown">4:54 mile time, </span>benching 155 pounds,
+            and (don't laugh) reaching Diamond rank in Valorant (I know you're
+            laughing).
           </p>
           <p className="about-text">
-            I like hamborgas, chicken nuggies, and noodles, and I really,
-            really, REALLY, do not like small dogs because they are entitled
-            pricks that bark too much. No offense if you have one of those
-            gremlins.
+            I like{" "}
+            <span className="brown">
+              hamborgas, chicken nuggies, and noodles,
+            </span>{" "}
+            and I really, really, REALLY, do not like small dogs because they
+            are entitled pricks that bark too much. No offense if you have one
+            of those <span className="brown">gremlins.</span>
           </p>
         </Col>
       </Row>
@@ -64,14 +72,17 @@ function About() {
         <Col md={8}>
           <h1 className="about-subheading">What's Next?</h1>
           <p className="about-text">
-            I DEFINITELY am getting an internship next summer (I hope). LA hacks
-            is also around the corner, so I'm looking forward to doing that with
+            I DEFINITELY am getting an <span className="brown">internship</span>{" "}
+            next summer (I hope). <span className="brown">LA hacks</span> is
+            also around the corner, so I'm looking forward to doing that with
             friends. I also want to top my last year's data science project and
-            dive deeper into the field of machine learning.
+            dive deeper into the field of{" "}
+            <span className="brown">machine learning.</span>
           </p>
           <p className="about-text">
-            Beyond academics, I aim to run a 1-hour 30-minute half marathon.
-            This will be my first ever race longer than 3 miles.
+            Beyond academics, I aim to run a 1-hour 30-minute{" "}
+            <span className="brown">half marathon.</span> This will be my first
+            ever race longer than 3 miles.
           </p>
           <p className="about-text">
             These goals may seem ambitious, but I'm ready to put in the hard

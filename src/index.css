@@ -14,6 +14,11 @@ code {
     monospace;
 }
 
+.brown {
+  color: #daad86;
+  font-weight: bold;
+}
+
 /* Effects */
 .project-card {
   opacity: 0;
@@ -328,7 +333,7 @@ code {
 /*Projects*/
 .project-section {
   position: relative !important;
-  padding-top: 2rem !important;
+  padding-top: 2.5rem !important;
   padding-bottom: 30px !important;
   text-align: center;
   background-color: #fbeec1;
@@ -397,7 +402,20 @@ code {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-
+.card-title {
+  font-size: 3rem !important;
+  font-style: "Rubik", sans-serif !important;
+  font-weight: bold !important;
+}
+.card-subheading {
+  color: #daad86;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.card-text {
+  font-size: 1.1rem;
+  padding-right: 40px;
+}
 @media (max-width: 992px) {
   .project-row {
     height: fit-content !important;

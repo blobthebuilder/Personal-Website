@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { Row } from "react-bootstrap";
 
 function ProjectCard(props) {
   return (
@@ -10,7 +11,18 @@ function ProjectCard(props) {
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
+          <Row>
+            <span className="card-subheading">Inspiration: </span>
+            <span className="card-text">{props.inspiration}</span>
+          </Row>
+          <Row>
+            <span className="card-subheading">What It Does: </span>
+            <span className="card-text">{props.functions}</span>
+          </Row>
+          <Row>
+            <span className="card-subheading">Uses: </span>
+            <span className="card-text">{props.utilities}</span>
+          </Row>
         </Card.Text>
         <div class="align-top">
           <Button
