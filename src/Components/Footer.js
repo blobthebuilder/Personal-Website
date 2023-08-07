@@ -8,12 +8,17 @@ function Footer() {
     <Container fluid>
       <Row className="footer">
         <Col
-          md="6"
+          md="4"
+          className="footer-copywright align-self-center">
+          <h3>Built with React</h3>
+        </Col>
+        <Col
+          md="4"
           className="footer-copywright align-self-center">
           <h3>Designed and Developed by Frank Wang 2023</h3>
         </Col>
         <Col
-          md="6"
+          md="4"
           className="footer-body d-flex flex-row t align-self-center justify-content-center">
           <h3>Connect with me:</h3>
           <ul className="footer-icons">

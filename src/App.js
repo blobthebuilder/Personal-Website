@@ -40,9 +40,6 @@ function App() {
           <Route
             path="projects"
             element={<Projects />}></Route>
-          <Route
-            path="resume"
-            element={<Resume />}></Route>
         </Routes>
         <Footer />
       </div>

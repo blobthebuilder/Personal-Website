@@ -4,6 +4,8 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Navbar() {
+  const pdfDownload =
+    "https://docs.google.com/document/d/1Yux7S39W2xPhnew9R_Z0xt4KFDzXRQysKKX0iA9vaO8/export?format=pdf";
   return (
     <nav class="navbar navbar-expand-lg navbar-dark">
       <Link
@@ -50,7 +52,8 @@ function Navbar() {
           <li class="nav-item">
             <Link
               class="nav-link"
-              to="/resume">
+              to={pdfDownload}
+              target="_blank">
               Resume
             </Link>
           </li>
