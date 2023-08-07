@@ -319,17 +319,6 @@ code {
 
 /*End About Page*/
 
-/*Resume*/
-.resume-container {
-  background-color: #fbeec1;
-  height: fit-content;
-}
-.resume {
-  height: 90vh;
-}
-
-/*End Resume*/
-
 /*Projects*/
 .project-section {
   position: relative !important;
