@@ -293,7 +293,9 @@ code {
   padding-bottom: 4rem;
   padding-left: 15% !important;
   background-image: url(./Assets/beach2.jpg);
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .about-heading-text {
