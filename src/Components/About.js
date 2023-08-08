@@ -1,19 +1,26 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import gym from "../Assets/gym.jpg";
+import bball from "../Assets/bball.jpg";
+import skii from "../Assets/skii.jpg";
 
 function About() {
   return (
     <Container
       fluid
       className="about-section">
-      <Col className="about-heading">
-        <h1 className="about-heading-text">ALL</h1>
-        <h1 className="about-heading-text">About</h1>
-        <h1 className="about-heading-text">Me</h1>
-      </Col>
+      <Row>
+        <Col
+          className="about-heading"
+          fluid>
+          <h1 className="about-heading-text">ALL</h1>
+          <h1 className="about-heading-text">About</h1>
+          <h1 className="about-heading-text">Me</h1>
+        </Col>
+      </Row>
+
       <Row className="about-content">
-        <Col md={8}>
+        <Col md={7}>
           <h1 className="about-subheading">Professionally, I'm...</h1>
           <p className="about-text">
             Currently a Computer Science major at UCSB.
@@ -33,7 +40,15 @@ function About() {
             importantly the ability to quickly learn new technologies.
           </p>
         </Col>
-        <Col md={4}></Col>
+        <Col
+          md={5}
+          style={{ padding: "4rem 2rem" }}>
+          <img
+            src={bball}
+            alt="Basketball Game"
+            className="img-fluid"
+          />
+        </Col>
       </Row>
       <Row className="about-content">
         <Col
@@ -89,7 +104,15 @@ function About() {
             work it takes to turn them into reality. Wish me luck!
           </p>
         </Col>
-        <Col md={4}></Col>
+        <Col
+          md={4}
+          style={{ padding: "2rem 4rem" }}>
+          <img
+            src={skii}
+            alt="Skiing"
+            className="img-fluid"
+          />
+        </Col>
       </Row>
     </Container>
   );

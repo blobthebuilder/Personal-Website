@@ -165,14 +165,14 @@ code {
   padding-top: 30px !important;
   height: 90vh !important;
   /* The image used */
-  background-image: url("./Assets/gym.jpg");
+  background-image: url("./Assets/pfp.jpg");
 
   /* Set a specific height */
   min-height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -185,7 +185,7 @@ code {
 
 .home-content {
   padding: 13rem 0 2rem !important;
-  color: white;
+  color: #daad86;
   text-align: center;
 }
 .home-header {
@@ -201,7 +201,7 @@ code {
 }
 
 .main-name {
-  color: white;
+  color: #daad86;
   font-family: "Rubik", sans-serif;
   font-size: 7rem;
   font-weight: 800;
@@ -286,16 +286,26 @@ code {
   background-color: #fbeec1;
 }
 .about-heading {
-  background-color: aquamarine;
-  text-align: center !important;
+  text-align: left !important;
   font-family: "Rubik", sans-serif;
   font-weight: 800 !important;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  padding-left: 15% !important;
+  background-image: url(./Assets/beach2.jpg);
+  background-size: 100%;
+}
+
+.about-heading-text {
+  font-size: 6rem;
+  color: white;
+  font-weight: 600;
 }
 
 .about-subheading {
   font-family: "Rubik", sans-serif;
   padding-bottom: 20px;
-  padding-top: 3rem;
+  padding-top: 4rem;
   font-size: 3rem;
 }
 
@@ -308,7 +318,7 @@ code {
 }
 
 .about-content {
-  height: 90vh;
+  height: 80vh;
 }
 
 @media (max-width: 992px) {

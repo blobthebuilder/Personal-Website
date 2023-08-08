@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Type from "./Type";
-import introImg from "../../Assets/gym.jpg";
+import introImg from "../../Assets/gaming.jpg";
 
 function Home() {
   return (
