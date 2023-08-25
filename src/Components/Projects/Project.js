@@ -43,6 +43,18 @@ function Project() {
           md={7}
           className="project-card my-auto">
           <ProjectCard
+            title="Sonic Sort"
+            ghLink="https://github.com/clevermonkey16/SonicSort"
+            demoLink="https://www.youtube.com/watch?v=gkRknUotKI8"
+            inspiration="Music producers have a lot of sound files, and it can be a difficult to find that perfect sound that's so close but hidden within a maze of files."
+            functions="Sonic Sort expediates the process of searching through sound files by searching through the user's submitted folders and finding similar sounds to the one inputted by the user."
+            utilities="PyQt, MatPlotLib, Primary Component Analysis, Sound Vectorization"
+          />
+        </Col>
+        <Col
+          md={7}
+          className="project-card my-auto">
+          <ProjectCard
             title="TOS-ter"
             devpostLink="https://devpost.com/software/tos-ter?ref_content=user-portfolio&ref_feature=in_progress"
             ghLink="https://github.com/larryz1230/TOSter"
@@ -109,18 +121,6 @@ function Project() {
             src={sonicsort}
             className="img-fluid leftHidden project-img"
             alt="Sonic Sort"
-          />
-        </Col>
-        <Col
-          md={7}
-          className="project-card my-auto">
-          <ProjectCard
-            title="Sonic Sort"
-            ghLink="https://github.com/clevermonkey16/SonicSort"
-            demoLink="https://www.youtube.com/watch?v=gkRknUotKI8"
-            inspiration="Music producers have a lot of sound files, and it can be a difficult to find that perfect sound that's so close but hidden within a maze of files."
-            functions="Sonic Sort expediates the process of searching through sound files by searching through the user's submitted folders and finding similar sounds to the one inputted by the user."
-            utilities="PyQt, MatPlotLib, Primary Component Analysis, Sound Vectorization"
           />
         </Col>
       </Row>
