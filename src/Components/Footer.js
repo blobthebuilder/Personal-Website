@@ -9,8 +9,18 @@ function Footer() {
       <Row className="footer">
         <Col
           md="4"
-          className="footer-copywright align-self-center">
-          <h3>Built with React</h3>
+          className="footer-body d-flex flex-row t align-self-center justify-content-center">
+          <h3>Code for this website:</h3>
+          <ul className="footer-icons">
+            <li className="social-icons">
+              <a
+                href="https://github.com/blobthebuilder/Personal-Website"
+                target="_blank"
+                rel="noopener noreferrer">
+                <AiFillGithub size={25} />
+              </a>
+            </li>
+          </ul>
         </Col>
         <Col
           md="4"

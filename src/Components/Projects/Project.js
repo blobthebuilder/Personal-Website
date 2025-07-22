@@ -5,6 +5,8 @@ import toster from "../../Assets/toster.png";
 import exploratorium from "../../Assets/exploratorium.png";
 import citizenaid from "../../Assets/citizenaid.png";
 import sonicsort from "../../Assets/sonicsort.png";
+import nerdsearch from "../../Assets/nerdsearch.png";
+import sfstopwatch from "../../Assets/sfstopwatch.jpg";
 
 function Project() {
   React.useEffect(() => {
@@ -31,9 +33,51 @@ function Project() {
       <h1 className="project-sub">for now...</h1>
 
       <Row className="project-row">
+        <Col md={5}>
+          <img
+            src={sfstopwatch}
+            className="img-fluid leftHidden project-img"
+            alt="SF Stopwatch"
+          />
+        </Col>
+        <Col
+          md={7}
+          className="project-card">
+          <ProjectCard
+            title="SF Stopwatch"
+            ghLink="https://github.com/laurence-liao/SF-Stopwatch"
+            devpostLink="https://devpost.com/software/sf-stopwatch"
+            demoLink="https://www.youtube.com/watch?v=7VgfJ9ybYtU"
+            inspiration="Traffic stops can have significant impacts on communities, and understanding their patterns is crucial. SF Stopwatch aims to shed light on the frequency and locations of traffic stops in San Francisco to promote transparency and awareness."
+            functions="SF Stopwatch visualizes traffic stop data across the city, highlighting hotspots and trends. It performs exploratory data analysis to investigate whether certain groups are disproportionately affected, helping users and policymakers better understand potential biases."
+            utilities="Folium, Python, Pandas, React, Flask, R, tidyverse"
+          />
+        </Col>
+      </Row>
+      <Row className="project-row">
+        <Col md={5}>
+          <img
+            src={nerdsearch}
+            className="img-fluid leftHidden project-img"
+            alt="Nerd Search"
+          />
+        </Col>
+        <Col
+          md={7}
+          className="project-card">
+          <ProjectCard
+            title="Nerd Search"
+            ghLink="https://github.com/clevermonkey16/nerd-search"
+            inspiration="The job hunt can be tough, especially when you're trying to find roles tailored to your specific skillset. Now you can find the perfect job for you!"
+            functions="Nerd Search leverages machine learning techniques, including support vector classification, to automatically categorize job postings. This allows users to quickly filter and discover relevant job opportunities suited to their interests and skills along with traditional filters like distance and YOE."
+            utilities="Selenium, Support Vector Classification, Flask, SQLite, React"
+          />
+        </Col>
+      </Row>
+      <Row className="project-row align-items-stretch">
         <Col
           md={5}
-          className="my-auto">
+          className="">
           <img
             src={toster}
             className="img-fluid leftHidden project-img"
@@ -42,7 +86,7 @@ function Project() {
         </Col>
         <Col
           md={7}
-          className="project-card my-auto">
+          className="project-card ">
           <ProjectCard
             title="TOS-ter"
             devpostLink="https://devpost.com/software/tos-ter?ref_content=user-portfolio&ref_feature=in_progress"
@@ -55,9 +99,7 @@ function Project() {
         </Col>
       </Row>
       <Row className="project-row">
-        <Col
-          md={5}
-          className="my-auto">
+        <Col md={5}>
           <img
             src={sonicsort}
             className="img-fluid leftHidden project-img"
@@ -66,7 +108,7 @@ function Project() {
         </Col>
         <Col
           md={7}
-          className="project-card my-auto">
+          className="project-card">
           <ProjectCard
             title="Sonic Sort"
             ghLink="https://github.com/clevermonkey16/SonicSort"
@@ -78,9 +120,7 @@ function Project() {
         </Col>
       </Row>
       <Row className="project-row">
-        <Col
-          md={5}
-          className="my-auto">
+        <Col md={5}>
           <img
             src={exploratorium}
             className="img-fluid leftHidden project-img"
@@ -89,7 +129,7 @@ function Project() {
         </Col>
         <Col
           md={7}
-          className="project-card my-auto">
+          className="project-card ">
           <ProjectCard
             title="Exploratorium"
             devpostLink="https://devpost.com/software/exploratorium-649opf"
@@ -104,7 +144,7 @@ function Project() {
       <Row className="project-row">
         <Col
           md={5}
-          className="my-auto">
+          className="d-flex justify-content-center">
           <img
             src={citizenaid}
             className="img-fluid leftHidden project-img"
@@ -113,7 +153,7 @@ function Project() {
         </Col>
         <Col
           md={7}
-          className="project-card my-auto">
+          className="project-card">
           <ProjectCard
             title="CitizenAid"
             devpostLink="https://devpost.com/software/citizenaid"

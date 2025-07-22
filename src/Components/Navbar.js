@@ -4,8 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Navbar() {
-  const pdfDownload =
-    "https://docs.google.com/document/d/1Yux7S39W2xPhnew9R_Z0xt4KFDzXRQysKKX0iA9vaO8/export?format=pdf";
+  const pdfDownload = "/resume.pdf";
   return (
     <nav class="navbar navbar-expand-lg navbar-dark">
       <Link
@@ -29,33 +28,14 @@ function Navbar() {
         id="navbarToggler">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <Link
-              class="nav-link"
-              to="/">
-              Home
-            </Link>
-          </li>
-          <li class="nav-item">
-            <Link
-              class="nav-link"
-              to="/about">
-              About
-            </Link>
-          </li>
-          <li class="nav-item">
-            <Link
-              class="nav-link"
-              to="/projects">
-              Projects
-            </Link>
-          </li>
-          <li class="nav-item">
-            <Link
-              class="nav-link"
-              to={pdfDownload}
-              target="_blank">
+            <a
+              className="nav-link"
+              href={pdfDownload}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="FrankWang_Resume.pdf">
               Resume
-            </Link>
+            </a>
           </li>
           <li class="nav-item">
             <Link

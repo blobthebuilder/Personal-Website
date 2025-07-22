@@ -5,8 +5,6 @@ import ScrollToTop from "./Components/ScrollToTop";
 import Navbar from "./Components/Navbar";
 import "bootstrap/dist/css/bootstrap.css";
 import Home from "./Components/Home Page/Home";
-import About from "./Components/About";
-import Projects from "./Components/Projects/Project";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -33,12 +31,6 @@ function App() {
           <Route
             path=""
             element={<Home />}></Route>
-          <Route
-            path="about"
-            element={<About />}></Route>
-          <Route
-            path="projects"
-            element={<Projects />}></Route>
         </Routes>
         <Footer />
       </div>
